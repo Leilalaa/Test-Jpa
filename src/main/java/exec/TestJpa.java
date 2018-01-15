@@ -5,6 +5,7 @@ import java.util.Scanner;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
+import javax.persistence.TypedQuery;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -25,14 +26,18 @@ public class TestJpa {
 
 		Scanner sc = new Scanner(System.in);
 		
-		LOG.info("Veuillez entrer l'identifiant du livre recherché :");
+		LOG.info("Veuillez entrer le titre du livre recherché :");
 		
-		int idSearch = sc.nextInt();
+		String titleSearch = sc.next();
 		
-		Livre l = em.find(Livre.class, idSearch);
+		TypedQuery<Livre> query = em.createQuery("select l from Livre l where l.titre=:titre", Livre.class);
 		
-		LOG.info(l.toString());
-		
+		query.setParameter("titre", titleSearch);
+		Livre l = (Livre) query.getResultList().get(0);
+		LOG.info(l.getId().toString());
+		LOG.info(l.getTitre());
+		LOG.info(l.getAuteur());
+
 		
 		
 		em.close();
