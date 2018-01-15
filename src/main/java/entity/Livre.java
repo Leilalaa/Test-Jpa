@@ -53,6 +53,12 @@ public class Livre {
 	public void setAuteur(String auteur) {
 		this.auteur = auteur;
 	}
+	
+	public String toString(){
+		
+		String s = "ID : "+this.getId()+", Auteur : "+this.getAuteur()+", Titre : "+this.getTitre();
+		return s;
+	}
 
 
 

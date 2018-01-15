@@ -34,9 +34,8 @@ public class TestJpa {
 		
 		query.setParameter("titre", titleSearch);
 		Livre l = (Livre) query.getResultList().get(0);
-		LOG.info(l.getId().toString());
-		LOG.info(l.getTitre());
-		LOG.info(l.getAuteur());
+		LOG.info(l.toString());
+
 
 		
 		
