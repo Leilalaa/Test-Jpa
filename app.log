@@ -1,0 +1,30 @@
+17:50:43.612 [main] WARN  org.hibernate.orm.connections -
+				HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+17:56:12.684 [main] WARN  org.hibernate.orm.connections -
+				HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+17:56:17.549 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper -
+				SQL Error: 1146, SQLState: 42S02
+17:56:17.549 [main] ERROR o.h.e.jdbc.spi.SqlExceptionHelper -
+				Table 'bibliotheque.client_emprunt' doesn't exist
+17:59:28.579 [main] WARN  org.hibernate.orm.connections -
+				HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+17:59:32.572 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper -
+				SQL Error: 1146, SQLState: 42S02
+17:59:32.572 [main] ERROR o.h.e.jdbc.spi.SqlExceptionHelper -
+				Table 'bibliotheque.client_emprunt' doesn't exist
+18:00:11.451 [main] WARN  org.hibernate.orm.connections -
+				HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+18:00:53.535 [main] WARN  org.hibernate.orm.connections -
+				HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+18:00:57.313 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper -
+				SQL Error: 1146, SQLState: 42S02
+18:00:57.313 [main] ERROR o.h.e.jdbc.spi.SqlExceptionHelper -
+				Table 'bibliotheque.client_emprunt' doesn't exist
+18:02:41.635 [main] WARN  org.hibernate.orm.connections -
+				HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+18:02:42.411 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper -
+				SQL Error: 1146, SQLState: 42S02
+18:02:42.411 [main] ERROR o.h.e.jdbc.spi.SqlExceptionHelper -
+				Table 'bibliotheque.client_emprunt' doesn't exist
+18:04:02.021 [main] WARN  org.hibernate.orm.connections -
+				HHH10001002: Using Hibernate built-in connection pool (not for production use!)
