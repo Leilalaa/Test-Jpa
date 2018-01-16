@@ -4,6 +4,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 import javax.persistence.Column;
+import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Inheritance;
 import javax.persistence.InheritanceType;
@@ -14,11 +15,9 @@ import javax.persistence.MappedSuperclass;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
-@MappedSuperclass 
-@Inheritance(strategy = InheritanceType.TABLE_PER_CLASS)
-
+@Entity 
+@Inheritance(strategy = InheritanceType.JOINED)
 @Table(name="COMPTE") 
-
 public class Compte {
 
 	@Id

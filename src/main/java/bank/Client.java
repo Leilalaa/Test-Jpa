@@ -23,7 +23,6 @@ import javax.persistence.Table;
 
 @Entity 
 @Table(name="CLIENT") 
-
 public class Client {
 	
 	@Id 

@@ -9,11 +9,8 @@ import javax.persistence.Table;
 
 @Entity 
 @Table(name="ASSURANCEVIE") 
-
 public class AssuranceVie extends Compte {
-	
-	@Id
-	private int id;
+
 	@Column(name = "DATE_FIN")
 	private LocalDate dateFin;
 	@Column(name = "TAUX")
@@ -23,13 +20,7 @@ public class AssuranceVie extends Compte {
 
 	}
 	
-	public int getId() {
-		return id;
-	}
 
-	public void setId(int id) {
-		this.id = id;
-	}
 
 	public LocalDate getDateFin() {
 		return dateFin;

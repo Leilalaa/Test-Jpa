@@ -10,11 +10,10 @@ import javax.persistence.Table;
 
 @Entity 
 @Table(name="BANQUE") 
-
 public class Banque {
 	
 	@Id
-	private Integer id;
+	private int id;
 	@Column(name = "NOM")
 	private String nom;
 	@OneToMany(mappedBy="banque")
@@ -24,11 +23,11 @@ public class Banque {
 
 	}
 	
-	public Integer getId() {
+	public int getId() {
 		return id;
 	}
 
-	public void setId(Integer id) {
+	public void setId(int id) {
 		this.id = id;
 	}
 

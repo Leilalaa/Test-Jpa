@@ -1,18 +1,15 @@
 package bank;
 
 import javax.persistence.Column;
+import javax.persistence.DiscriminatorValue;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity 
 @Table(name="VIREMENT") 
-
+@DiscriminatorValue("V") 
 public class Virement extends Operation {
-	
-	@Id
-	private int id;
-
 
 	@Column(name = "BENEFICIAIRE")
 	private String beneficiaire;
@@ -20,14 +17,7 @@ public class Virement extends Operation {
 	public Virement() {
 
 	}
-	
-	public int getId() {
-		return id;
-	}
 
-	public void setId(int id) {
-		this.id = id;
-	}
 	
 	public String getBeneficiaire() {
 		return beneficiaire;

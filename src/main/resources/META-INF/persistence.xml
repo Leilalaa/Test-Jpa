@@ -13,13 +13,13 @@ xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org
 	</persistence-unit>
 	<persistence-unit name="banque" transaction-type="RESOURCE_LOCAL">
 		<provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>  
-		<class>banque.bank.Banque</class>  
-		<class>banque.bank.Client</class>  
-		<class>banque.bank.Compte</class>   
-		<class>banque.bank.LivretA</class> 
-		<class>banque.bank.AssuranceVie</class>   
-		<class>banque.bank.Operation</class>   
-		<class>banque.bank.Virement</class>   
+		<class>bank.Banque</class>  
+		<class>bank.Client</class>  
+		<class>bank.Compte</class>   
+		<class>bank.LivretA</class> 
+		<class>bank.AssuranceVie</class>   
+		<class>bank.Operation</class>   
+		<class>bank.Virement</class>   
 		<properties>
 			<!-- Paramètres d'accès à la BDD -->
 			<property name="javax.persistence.jdbc.url" value=" jdbc:mariadb://localhost:3306/banque" />

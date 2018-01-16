@@ -28,3 +28,237 @@
 				Table 'bibliotheque.client_emprunt' doesn't exist
 18:04:02.021 [main] WARN  org.hibernate.orm.connections -
 				HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+14:15:55.880 [main] WARN  org.hibernate.orm.connections -
+				HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+14:16:26.208 [main] WARN  org.hibernate.orm.connections -
+				HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+14:18:48.361 [main] WARN  org.hibernate.orm.connections -
+				HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+14:24:52.220 [main] WARN  org.hibernate.orm.connections -
+				HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+14:31:39.492 [main] WARN  org.hibernate.orm.connections -
+				HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+14:33:45.580 [main] WARN  org.hibernate.orm.connections -
+				HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+14:39:07.541 [main] WARN  org.hibernate.orm.connections -
+				HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+14:44:08.100 [main] WARN  org.hibernate.orm.connections -
+				HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+14:46:06.346 [main] WARN  org.hibernate.orm.connections -
+				HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+14:46:06.646 [main] WARN  org.hibernate.cfg.AnnotationBinder -
+				HHH000139: Illegal use of @Table in a subclass of a SINGLE_TABLE hierarchy: bank.Virement
+14:46:06.969 [main] WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl -
+				GenerationTarget encountered exception accepting command : Unable to execute command [alter table ASSURANCEVIE drop foreign key FKm4bfqpsxab02o2emmkpss4ojh]
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Unable to execute command [alter table ASSURANCEVIE drop foreign key FKm4bfqpsxab02o2emmkpss4ojh]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:63)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlString(SchemaDropperImpl.java:370)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlStrings(SchemaDropperImpl.java:355)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applyConstraintDropping(SchemaDropperImpl.java:327)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.dropFromMetadata(SchemaDropperImpl.java:229)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.performDrop(SchemaDropperImpl.java:153)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:125)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:111)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:137)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:64)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:458)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:465)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:881)
+	at org.hibernate.jpa.HibernatePersistenceProvider.createEntityManagerFactory(HibernatePersistenceProvider.java:58)
+	at javax.persistence.Persistence.createEntityManagerFactory(Persistence.java:55)
+	at javax.persistence.Persistence.createEntityManagerFactory(Persistence.java:39)
+	at bank.Gestionnaire.main(Gestionnaire.java:30)
+Caused by: java.sql.SQLSyntaxErrorException: Table 'banque.assurancevie' doesn't exist
+	at org.mariadb.jdbc.internal.SQLExceptionMapper.get(SQLExceptionMapper.java:138)
+	at org.mariadb.jdbc.internal.SQLExceptionMapper.throwException(SQLExceptionMapper.java:106)
+	at org.mariadb.jdbc.MySQLStatement.executeQueryEpilog(MySQLStatement.java:264)
+	at org.mariadb.jdbc.MySQLStatement.execute(MySQLStatement.java:288)
+	at org.mariadb.jdbc.MySQLStatement.execute(MySQLStatement.java:338)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:51)
+	... 16 common frames omitted
+Caused by: org.mariadb.jdbc.internal.common.QueryException: Table 'banque.assurancevie' doesn't exist
+	at org.mariadb.jdbc.internal.mysql.MySQLProtocol.getResult(MySQLProtocol.java:942)
+	at org.mariadb.jdbc.internal.mysql.MySQLProtocol.executeQuery(MySQLProtocol.java:991)
+	at org.mariadb.jdbc.MySQLStatement.execute(MySQLStatement.java:281)
+	... 18 common frames omitted
+14:46:06.970 [main] WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl -
+				GenerationTarget encountered exception accepting command : Unable to execute command [alter table CLIENT drop foreign key FK9anjdmqm9l26iuwid009w82t3]
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Unable to execute command [alter table CLIENT drop foreign key FK9anjdmqm9l26iuwid009w82t3]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:63)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlString(SchemaDropperImpl.java:370)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlStrings(SchemaDropperImpl.java:355)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applyConstraintDropping(SchemaDropperImpl.java:327)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.dropFromMetadata(SchemaDropperImpl.java:229)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.performDrop(SchemaDropperImpl.java:153)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:125)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:111)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:137)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:64)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:458)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:465)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:881)
+	at org.hibernate.jpa.HibernatePersistenceProvider.createEntityManagerFactory(HibernatePersistenceProvider.java:58)
+	at javax.persistence.Persistence.createEntityManagerFactory(Persistence.java:55)
+	at javax.persistence.Persistence.createEntityManagerFactory(Persistence.java:39)
+	at bank.Gestionnaire.main(Gestionnaire.java:30)
+Caused by: java.sql.SQLSyntaxErrorException: Table 'banque.client' doesn't exist
+	at org.mariadb.jdbc.internal.SQLExceptionMapper.get(SQLExceptionMapper.java:138)
+	at org.mariadb.jdbc.internal.SQLExceptionMapper.throwException(SQLExceptionMapper.java:106)
+	at org.mariadb.jdbc.MySQLStatement.executeQueryEpilog(MySQLStatement.java:264)
+	at org.mariadb.jdbc.MySQLStatement.execute(MySQLStatement.java:288)
+	at org.mariadb.jdbc.MySQLStatement.execute(MySQLStatement.java:338)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:51)
+	... 16 common frames omitted
+Caused by: org.mariadb.jdbc.internal.common.QueryException: Table 'banque.client' doesn't exist
+	at org.mariadb.jdbc.internal.mysql.MySQLProtocol.getResult(MySQLProtocol.java:942)
+	at org.mariadb.jdbc.internal.mysql.MySQLProtocol.executeQuery(MySQLProtocol.java:991)
+	at org.mariadb.jdbc.MySQLStatement.execute(MySQLStatement.java:281)
+	... 18 common frames omitted
+14:46:06.970 [main] WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl -
+				GenerationTarget encountered exception accepting command : Unable to execute command [alter table CLIENT_COMPTE drop foreign key FK5auemqpk5jxenn5qyrexrd7uw]
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Unable to execute command [alter table CLIENT_COMPTE drop foreign key FK5auemqpk5jxenn5qyrexrd7uw]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:63)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlString(SchemaDropperImpl.java:370)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlStrings(SchemaDropperImpl.java:355)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applyConstraintDropping(SchemaDropperImpl.java:327)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.dropFromMetadata(SchemaDropperImpl.java:229)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.performDrop(SchemaDropperImpl.java:153)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:125)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:111)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:137)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:64)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:458)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:465)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:881)
+	at org.hibernate.jpa.HibernatePersistenceProvider.createEntityManagerFactory(HibernatePersistenceProvider.java:58)
+	at javax.persistence.Persistence.createEntityManagerFactory(Persistence.java:55)
+	at javax.persistence.Persistence.createEntityManagerFactory(Persistence.java:39)
+	at bank.Gestionnaire.main(Gestionnaire.java:30)
+Caused by: java.sql.SQLSyntaxErrorException: Table 'banque.client_compte' doesn't exist
+	at org.mariadb.jdbc.internal.SQLExceptionMapper.get(SQLExceptionMapper.java:138)
+	at org.mariadb.jdbc.internal.SQLExceptionMapper.throwException(SQLExceptionMapper.java:106)
+	at org.mariadb.jdbc.MySQLStatement.executeQueryEpilog(MySQLStatement.java:264)
+	at org.mariadb.jdbc.MySQLStatement.execute(MySQLStatement.java:288)
+	at org.mariadb.jdbc.MySQLStatement.execute(MySQLStatement.java:338)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:51)
+	... 16 common frames omitted
+Caused by: org.mariadb.jdbc.internal.common.QueryException: Table 'banque.client_compte' doesn't exist
+	at org.mariadb.jdbc.internal.mysql.MySQLProtocol.getResult(MySQLProtocol.java:942)
+	at org.mariadb.jdbc.internal.mysql.MySQLProtocol.executeQuery(MySQLProtocol.java:991)
+	at org.mariadb.jdbc.MySQLStatement.execute(MySQLStatement.java:281)
+	... 18 common frames omitted
+14:46:06.971 [main] WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl -
+				GenerationTarget encountered exception accepting command : Unable to execute command [alter table CLIENT_COMPTE drop foreign key FKmbkkp6ylhfmvt7ht9qh22do1i]
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Unable to execute command [alter table CLIENT_COMPTE drop foreign key FKmbkkp6ylhfmvt7ht9qh22do1i]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:63)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlString(SchemaDropperImpl.java:370)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlStrings(SchemaDropperImpl.java:355)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applyConstraintDropping(SchemaDropperImpl.java:327)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.dropFromMetadata(SchemaDropperImpl.java:229)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.performDrop(SchemaDropperImpl.java:153)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:125)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:111)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:137)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:64)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:458)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:465)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:881)
+	at org.hibernate.jpa.HibernatePersistenceProvider.createEntityManagerFactory(HibernatePersistenceProvider.java:58)
+	at javax.persistence.Persistence.createEntityManagerFactory(Persistence.java:55)
+	at javax.persistence.Persistence.createEntityManagerFactory(Persistence.java:39)
+	at bank.Gestionnaire.main(Gestionnaire.java:30)
+Caused by: java.sql.SQLSyntaxErrorException: Table 'banque.client_compte' doesn't exist
+	at org.mariadb.jdbc.internal.SQLExceptionMapper.get(SQLExceptionMapper.java:138)
+	at org.mariadb.jdbc.internal.SQLExceptionMapper.throwException(SQLExceptionMapper.java:106)
+	at org.mariadb.jdbc.MySQLStatement.executeQueryEpilog(MySQLStatement.java:264)
+	at org.mariadb.jdbc.MySQLStatement.execute(MySQLStatement.java:288)
+	at org.mariadb.jdbc.MySQLStatement.execute(MySQLStatement.java:338)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:51)
+	... 16 common frames omitted
+Caused by: org.mariadb.jdbc.internal.common.QueryException: Table 'banque.client_compte' doesn't exist
+	at org.mariadb.jdbc.internal.mysql.MySQLProtocol.getResult(MySQLProtocol.java:942)
+	at org.mariadb.jdbc.internal.mysql.MySQLProtocol.executeQuery(MySQLProtocol.java:991)
+	at org.mariadb.jdbc.MySQLStatement.execute(MySQLStatement.java:281)
+	... 18 common frames omitted
+14:46:06.972 [main] WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl -
+				GenerationTarget encountered exception accepting command : Unable to execute command [alter table LIVRETA drop foreign key FKm2vsjb88a37agsc5i8go0e1kk]
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Unable to execute command [alter table LIVRETA drop foreign key FKm2vsjb88a37agsc5i8go0e1kk]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:63)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlString(SchemaDropperImpl.java:370)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlStrings(SchemaDropperImpl.java:355)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applyConstraintDropping(SchemaDropperImpl.java:327)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.dropFromMetadata(SchemaDropperImpl.java:229)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.performDrop(SchemaDropperImpl.java:153)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:125)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:111)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:137)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:64)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:458)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:465)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:881)
+	at org.hibernate.jpa.HibernatePersistenceProvider.createEntityManagerFactory(HibernatePersistenceProvider.java:58)
+	at javax.persistence.Persistence.createEntityManagerFactory(Persistence.java:55)
+	at javax.persistence.Persistence.createEntityManagerFactory(Persistence.java:39)
+	at bank.Gestionnaire.main(Gestionnaire.java:30)
+Caused by: java.sql.SQLSyntaxErrorException: Table 'banque.livreta' doesn't exist
+	at org.mariadb.jdbc.internal.SQLExceptionMapper.get(SQLExceptionMapper.java:138)
+	at org.mariadb.jdbc.internal.SQLExceptionMapper.throwException(SQLExceptionMapper.java:106)
+	at org.mariadb.jdbc.MySQLStatement.executeQueryEpilog(MySQLStatement.java:264)
+	at org.mariadb.jdbc.MySQLStatement.execute(MySQLStatement.java:288)
+	at org.mariadb.jdbc.MySQLStatement.execute(MySQLStatement.java:338)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:51)
+	... 16 common frames omitted
+Caused by: org.mariadb.jdbc.internal.common.QueryException: Table 'banque.livreta' doesn't exist
+	at org.mariadb.jdbc.internal.mysql.MySQLProtocol.getResult(MySQLProtocol.java:942)
+	at org.mariadb.jdbc.internal.mysql.MySQLProtocol.executeQuery(MySQLProtocol.java:991)
+	at org.mariadb.jdbc.MySQLStatement.execute(MySQLStatement.java:281)
+	... 18 common frames omitted
+14:46:06.973 [main] WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl -
+				GenerationTarget encountered exception accepting command : Unable to execute command [alter table OPERATION drop foreign key FK9m7quaobfwfxl936jyndb4ifs]
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Unable to execute command [alter table OPERATION drop foreign key FK9m7quaobfwfxl936jyndb4ifs]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:63)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlString(SchemaDropperImpl.java:370)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlStrings(SchemaDropperImpl.java:355)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applyConstraintDropping(SchemaDropperImpl.java:327)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.dropFromMetadata(SchemaDropperImpl.java:229)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.performDrop(SchemaDropperImpl.java:153)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:125)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:111)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:137)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:64)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:458)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:465)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:881)
+	at org.hibernate.jpa.HibernatePersistenceProvider.createEntityManagerFactory(HibernatePersistenceProvider.java:58)
+	at javax.persistence.Persistence.createEntityManagerFactory(Persistence.java:55)
+	at javax.persistence.Persistence.createEntityManagerFactory(Persistence.java:39)
+	at bank.Gestionnaire.main(Gestionnaire.java:30)
+Caused by: java.sql.SQLSyntaxErrorException: Table 'banque.operation' doesn't exist
+	at org.mariadb.jdbc.internal.SQLExceptionMapper.get(SQLExceptionMapper.java:138)
+	at org.mariadb.jdbc.internal.SQLExceptionMapper.throwException(SQLExceptionMapper.java:106)
+	at org.mariadb.jdbc.MySQLStatement.executeQueryEpilog(MySQLStatement.java:264)
+	at org.mariadb.jdbc.MySQLStatement.execute(MySQLStatement.java:288)
+	at org.mariadb.jdbc.MySQLStatement.execute(MySQLStatement.java:338)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:51)
+	... 16 common frames omitted
+Caused by: org.mariadb.jdbc.internal.common.QueryException: Table 'banque.operation' doesn't exist
+	at org.mariadb.jdbc.internal.mysql.MySQLProtocol.getResult(MySQLProtocol.java:942)
+	at org.mariadb.jdbc.internal.mysql.MySQLProtocol.executeQuery(MySQLProtocol.java:991)
+	at org.mariadb.jdbc.MySQLStatement.execute(MySQLStatement.java:281)
+	... 18 common frames omitted
+14:52:15.906 [main] WARN  org.hibernate.orm.connections -
+				HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+14:52:16.242 [main] WARN  org.hibernate.cfg.AnnotationBinder -
+				HHH000139: Illegal use of @Table in a subclass of a SINGLE_TABLE hierarchy: bank.Virement
+14:53:17.091 [main] WARN  org.hibernate.orm.connections -
+				HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+14:53:17.407 [main] WARN  org.hibernate.cfg.AnnotationBinder -
+				HHH000139: Illegal use of @Table in a subclass of a SINGLE_TABLE hierarchy: bank.Virement
+14:58:49.870 [main] WARN  org.hibernate.orm.connections -
+				HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+14:58:50.204 [main] WARN  org.hibernate.cfg.AnnotationBinder -
+				HHH000139: Illegal use of @Table in a subclass of a SINGLE_TABLE hierarchy: bank.Virement
+15:40:47.728 [main] WARN  org.hibernate.orm.connections -
+				HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+15:40:48.067 [main] WARN  org.hibernate.cfg.AnnotationBinder -
+				HHH000139: Illegal use of @Table in a subclass of a SINGLE_TABLE hierarchy: bank.Virement
