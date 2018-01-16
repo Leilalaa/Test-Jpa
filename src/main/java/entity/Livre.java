@@ -6,6 +6,11 @@ import javax.persistence.Id;
 
 import javax.persistence.Table;
 
+/** .
+ *  Ici, nous definissons les livres de la bibiotheque 
+ *  à partir de la table livre de notre base de données Bibliotheque
+ */
+
 @Entity 
 @Table(name="LIVRE") 
 
@@ -54,6 +59,7 @@ public class Livre {
 		this.auteur = auteur;
 	}
 	
+	// Redefintion de la methode toString afin de pouvoir afficher les informations sur les livres
 	public String toString(){
 		
 		String s = "ID : "+this.getId()+", Auteur : "+this.getAuteur()+", Titre : "+this.getTitre();

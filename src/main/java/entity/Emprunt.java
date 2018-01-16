@@ -14,6 +14,11 @@ import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
+/** .
+ *  Ici, nous definissons un emprunt de la bibiotheque 
+ *  à partir de la table emprunt de notre base de données Bibliotheque
+ */
+
 @Entity 
 @Table(name="EMPRUNT") 
 
@@ -40,12 +45,6 @@ public class Emprunt {
 	)
 	private Set<Livre> livres;
 
-	public Set<Livre> getLivres() {
-		return livres;
-	}
-	public void setLivres(Set<Livre> livres) {
-		this.livres = livres;
-	}
 		// constructeurs 
 		public Emprunt() { 
 			livres = new HashSet<Livre>();
@@ -91,6 +90,14 @@ public class Emprunt {
 			this.client = client;
 		}
 		
+		public Set<Livre> getLivres() {
+			return livres;
+		}
+		public void setLivres(Set<Livre> livres) {
+			this.livres = livres;
+		}
+		
+	// Redefintion de la methode toString afin de pouvoir afficher les emprunts	
 		public String toString(){
 			
 			String s = "  "+this.getId()+" "+this.getDateDebut()+"  "+this.getDelai()+" "+this.getDateFin();

@@ -10,6 +10,10 @@ import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
+/** .
+ *  Ici, nous definissons un client de la bibiotheque 
+ *  à partir de la table client de notre base de données Bibliotheque
+ */
 @Entity 
 @Table(name="CLIENT") 
 
@@ -64,9 +68,10 @@ public class Client {
 			this.prenom = prenom;
 		}
 		
+		// Methode toString redefinie ici afin de pouvoir afficher un client
 		public String toString(){
 			
-			String s = "ID : "+this.getId()+", Auteur : "+this.getNom()+", Titre : "+this.getPrenom();
+			String s = "ID : "+this.getId()+", Nom : "+this.getNom()+", Prenom : "+this.getPrenom();
 			return s;
 		}
 	
